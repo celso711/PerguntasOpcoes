@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using WebApplication1.Services;
+using PerguntasOpcoes.Services;
 
 public class RelacaoOpcaoPerguntaController : ControllerBase
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using WebApplication1.Services;
+using PerguntasOpcoes.Services;
 
-namespace WebApplication1.Controllers
+namespace PerguntasOpcoes.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -935,11 +935,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\celso\\source\\repos\\WebApplication1\\WebApplication1\\PerguntasOpcoesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\celso\\source\\repos\\PerguntasOpcoes\\PerguntasOpcoes\\PerguntasOpcoesAPI.csproj",
       "projectName": "PerguntasOpcoesAPI",
-      "projectPath": "C:\\Users\\celso\\source\\repos\\WebApplication1\\WebApplication1\\PerguntasOpcoesAPI.csproj",
+      "projectPath": "C:\\Users\\celso\\source\\repos\\PerguntasOpcoes\\PerguntasOpcoes\\PerguntasOpcoesAPI.csproj",
       "packagesPath": "C:\\Users\\celso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\celso\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\celso\\source\\repos\\PerguntasOpcoes\\PerguntasOpcoes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",

@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "PerguntasOpcoes/1.0.0": {
+      "PerguntasOpcoesAPI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "PerguntasOpcoes.dll": {}
+          "PerguntasOpcoesAPI.dll": {}
         }
       },
       "Microsoft.AspNetCore.OpenApi/7.0.9": {
@@ -152,7 +152,7 @@
     }
   },
   "libraries": {
-    "PerguntasOpcoes/1.0.0": {
+    "PerguntasOpcoesAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

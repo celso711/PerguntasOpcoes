@@ -1,5 +1,5 @@
-﻿using WebApplication1.Models;
-using WebApplication1.Repositories;
+﻿using PerguntasOpcoes.Models;
+using PerguntasOpcoes.Repositories;
 
 public class OpcaoService
 {

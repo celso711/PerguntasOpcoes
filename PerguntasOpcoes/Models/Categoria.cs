@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Models
+﻿namespace PerguntasOpcoes.Models
 {
     public class Categoria
     {

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "yJNWnxmgsvHpzttgWeJ0poCUPGjirLloPoA1bBSvHNM=",
-  "Source": "PerguntasOpcoes",
-  "BasePath": "_content/PerguntasOpcoes",
+  "Hash": "dn0S2QtFyJOkksbHbA6QwXPL7GfdiTPuvy9rq2kE74s=",
+  "Source": "PerguntasOpcoesAPI",
+  "BasePath": "_content/PerguntasOpcoesAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

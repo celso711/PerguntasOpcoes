@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebApplication1.Models;
-using WebApplication1.Repositories;
+using PerguntasOpcoes.Models;
+using PerguntasOpcoes.Repositories;
 
-namespace WebApplication1.Services
+namespace PerguntasOpcoes.Services
 {
     public class PerguntaService
     {
