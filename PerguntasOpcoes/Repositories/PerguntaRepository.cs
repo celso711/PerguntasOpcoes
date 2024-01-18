@@ -27,10 +27,16 @@ namespace PerguntasOpcoes.Repositories
                 {
                     while (await reader.ReadAsync())
                     {
-                        perguntas.Add(new Pergunta
+                        var pergunta = new Pergunta
                         {
-                            // Atribua os campos aqui
-                        });
+                            PerguntaID = reader.GetInt32(reader.GetOrdinal("PerguntaID")),
+                            CategoriaID = reader.GetInt32(reader.GetOrdinal("CategoriaID")),
+                            Texto = reader.GetString(reader.GetOrdinal("Texto")),
+                            TipoPergunta = reader.GetInt32(reader.GetOrdinal("TipoPergunta")),
+                            OrdemExibicao = reader.GetInt32(reader.GetOrdinal("OrdemExibicao")),
+                            Ativa = reader.GetBoolean(reader.GetOrdinal("Ativa"))
+                        };
+                        perguntas.Add(pergunta);
                     }
                 }
             }

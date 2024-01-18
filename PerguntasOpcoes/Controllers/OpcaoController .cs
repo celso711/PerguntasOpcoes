@@ -1,18 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
-public class OpcaoController : ControllerBase
+namespace PerguntasOpcoes.Controllers
 {
-    private readonly OpcaoService _opcaoService;
-
-    public OpcaoController(OpcaoService opcaoService)
+    [ApiController]
+    [Route("[controller]")]
+    public class OpcaoController : ControllerBase
     {
-        _opcaoService = opcaoService;
-    }
+        private readonly OpcaoService _opcaoService;
 
-    [HttpGet]
-    public async Task<IActionResult> GetOpcoes()
-    {
-        var opcoes = await _opcaoService.GetAllOpcoesAsync();
-        return Ok(opcoes);
+        public OpcaoController(OpcaoService opcaoService)
+        {
+            _opcaoService = opcaoService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetOpcoes()
+        {
+            var opcoes = await _opcaoService.GetAllOpcoesAsync();
+            return Ok(opcoes);
+        }
     }
 }

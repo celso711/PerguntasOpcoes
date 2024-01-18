@@ -1,19 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PerguntasOpcoes.Services;
-
-public class PerguntaOpcaoController : ControllerBase
+namespace PerguntasOpcoes.Controllers
 {
-    private readonly PerguntaOpcaoService _perguntaOpcaoService;
-
-    public PerguntaOpcaoController(PerguntaOpcaoService perguntaOpcaoService)
+    [ApiController]
+    [Route("[controller]")]
+    public class PerguntaOpcaoController : ControllerBase
     {
-        _perguntaOpcaoService = perguntaOpcaoService;
-    }
+        private readonly PerguntaOpcaoService _perguntaOpcaoService;
 
-    [HttpGet]
-    public async Task<IActionResult> GetPerguntaOpcao()
-    {
-        var perguntasOpcoes = await _perguntaOpcaoService.GetAllPerguntaOpcaoAsync();
-        return Ok(perguntasOpcoes);
+        public PerguntaOpcaoController(PerguntaOpcaoService perguntaOpcaoService)
+        {
+            _perguntaOpcaoService = perguntaOpcaoService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPerguntaOpcao()
+        {
+            var perguntasOpcoes = await _perguntaOpcaoService.GetAllPerguntaOpcaoAsync();
+            return Ok(perguntasOpcoes);
+        }
     }
 }

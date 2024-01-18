@@ -27,10 +27,14 @@ namespace PerguntasOpcoes.Repositories
                 {
                     while (await reader.ReadAsync())
                     {
-                        perguntasOpcoes.Add(new PerguntaOpcao
+                        var perguntaOpcao = new PerguntaOpcao
                         {
-                            // Atribua os campos aqui
-                        });
+                            PerguntaOpcaoID = reader.GetInt32(reader.GetOrdinal("PerguntaOpcaoID")),
+                            PerguntaID = reader.GetInt32(reader.GetOrdinal("PerguntaID")),
+                            OpcaoID = reader.GetInt32(reader.GetOrdinal("OpcaoID"))
+                            // Atribua outras propriedades aqui
+                        };
+                        perguntasOpcoes.Add(perguntaOpcao);
                     }
                 }
             }
