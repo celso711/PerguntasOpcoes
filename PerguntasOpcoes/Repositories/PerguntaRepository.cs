@@ -43,5 +43,35 @@ namespace PerguntasOpcoes.Repositories
 
             return perguntas;
         }
+        public async Task<Pergunta> GetPerguntaByIdAsync(int perguntaId)
+        {
+            Pergunta pergunta = null;
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT * FROM Pergunta WHERE PerguntaID = @perguntaId", connection);
+                command.Parameters.AddWithValue("@perguntaId", perguntaId);
+
+                await connection.OpenAsync();
+
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    if (await reader.ReadAsync())
+                    {
+                        pergunta = new Pergunta
+                        {
+                            PerguntaID = reader.GetInt32(reader.GetOrdinal("PerguntaID")),
+                            CategoriaID = reader.GetInt32(reader.GetOrdinal("CategoriaID")),
+                            Texto = reader.GetString(reader.GetOrdinal("Texto")),
+                            TipoPergunta = reader.GetInt32(reader.GetOrdinal("TipoPergunta")),
+                            OrdemExibicao = reader.GetInt32(reader.GetOrdinal("OrdemExibicao")),
+                            Ativa = reader.GetBoolean(reader.GetOrdinal("Ativa"))
+                        };
+                    }
+                }
+            }
+
+            return pergunta;
+        }
     }
 }

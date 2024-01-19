@@ -8,5 +8,6 @@
         public int TipoPergunta { get; set; }
         public int OrdemExibicao { get; set; }
         public bool Ativa { get; set; }
+        public List<Opcao> Opcoes { get; set; } = new List<Opcao>();
     }
 }

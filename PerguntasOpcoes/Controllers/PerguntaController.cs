@@ -19,6 +19,7 @@ namespace PerguntasOpcoes.Controllers
         public async Task<IActionResult> GetPerguntas()
         {
             var perguntas = await _perguntaService.GetAllPerguntasAsync();
+
             return Ok(perguntas);
         }
     }

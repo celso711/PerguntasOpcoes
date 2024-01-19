@@ -6,5 +6,6 @@
         public string Texto { get; set; }
         public int OrdemExibicao { get; set; }
         public bool Ativa { get; set; }
+        public Pergunta PerguntaSubsequente { get; set; }
     }
 }

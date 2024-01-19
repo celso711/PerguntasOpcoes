@@ -7,5 +7,7 @@ namespace PerguntasOpcoes.Repositories
     public interface IPerguntaRepository
     {
         Task<IEnumerable<Pergunta>> GetAllAsync();
+        Task<Pergunta> GetPerguntaByIdAsync(int perguntaId);
     }
+
 }
